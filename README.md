@@ -9,10 +9,10 @@
     - type `InfluxDB`
     - URL `http://localhost:8086`
     - access `direct`
-    - database `metrics`
+    - database `telegraf_metrics`
     - user `admin`
     - password `influxdb`
 5. Configure Grafana dashboards as you like.
 
 ## Additional info
-Telegraf sends data about the system (CPU, memory etc.), MySQL database (`$TELEGRAF_INPUTS_MYSQL_SERVER`) and web server responses (`$TELEGRAF_INPUTS_HTTP_RESPONSE_ADDRESS`).
+Telegraf sends data about the system (CPU, memory etc.) and if uncommented in the config file: MySQL database (`$TELEGRAF_INPUTS_MYSQL_SERVER`), webserver responses (`$TELEGRAF_INPUTS_HTTP_RESPONSE_ADDRESS`). Databases are mapped to the `data` directory.
