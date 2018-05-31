@@ -2,7 +2,7 @@
 
 ## Installation
 
-1. Adjust `.env` file. The IP address to reach the docker host is `172.22.0.1`
+1. Adjust `.env` file. The IP address to reach the docker host is `172.17.0.1` (default docker0 bridge IP)
 2. Start the containers with `docker-compose up -d`
 3. Access Grafana at `localhost:3000`, you can also find InfluxDB Admin Panel at `localhost:8083`
 4. Configure data source in Grafana:
